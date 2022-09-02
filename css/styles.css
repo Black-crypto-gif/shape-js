@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* font-family: 'Acme', sans-serif; */
+
+body{
+    background-color: #ff3d1b;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.main-section{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.title-shape{
+    font-family: 'Acme', sans-serif;
+    font-size: 9rem;
+    margin: 3.5rem;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.shape-banner{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    margin: 2rem;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.banner-title{
+    width: 500px;
+}
+.banner-image{
+    width:650px;
+    animation: rotate 45s linear infinite;
+}
+
+@keyframes rotate{
+      100% {
+        transform: rotate(45deg)
+      }
+}
+.shape-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.description-title{
+    font-family: 'Acme', sans-serif;
+    font-size: 5rem;
+    margin: 3.5rem;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.shapes-images{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.image-shape-items{
+    width: 150px;
+    cursor: pointer;
+    transition: 9s;
+}
+.image-shape-items:hover {
+    transform: scale(3.5);
+}
